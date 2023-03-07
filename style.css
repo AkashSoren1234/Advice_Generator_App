@@ -28,19 +28,21 @@ html {
 body {
   font-family: "Manrope", sans-serif;
   min-height: 100vh;
+  background-color: var(--Dark_Blue);
 }
 
 a {
- text-decoration: none;
- color: antiquewhite;
+  text-decoration: none;
+  color: antiquewhite;
 }
 
 .container {
   min-height: 100vh;
-  background-color: var(--Dark_Blue);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  position: relative;
+  flex-direction: column;
 }
 
 .main_container {
@@ -70,6 +72,10 @@ a {
   margin: 1.5rem 0;
 }
 
+.divider_image img {
+  width: 100%;
+}
+
 .generate_message_click {
   background-color: var(--Neon_Green);
   border: none;
@@ -88,29 +94,24 @@ a {
 }
 
 .attribution {
- position: absolute;
- bottom: 2rem;
- color: aliceblue;
- width: 90vw;
- font-size: 0.8rem;
- margin: 0 auto;
- text-align: center;
+  color: aliceblue;
+  width: 90vw;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 @media screen and (min-width: 765px) {
- .main_container {
-  max-width: 32vw;
- }
+  .main_container {
+    max-width: 32vw;
+  }
 
- .advice_id {
-  font-size: 1.2rem;
- }
+  .advice_id {
+    font-size: 1.2rem;
+  }
 
- .divider_image img {
-  width: 100%;
- }
-
- .attribution {
-  font-size: 1.3rem;
- }
+  .attribution {
+    font-size: 1.3rem;
+  }
 }
